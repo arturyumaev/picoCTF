@@ -11,3 +11,14 @@ $ ( echo "obase=16" ; cat numbers.txt ) | bc # Convert integers into hex
 # Then convert given hex numbers into ascii
 # Done
 ```
+
+#### ✅ Task name: "Obedient Cat"
+
+⚙️ Solving
+
+```bash
+$ wget https://mercury.picoctf.net/static/a5683698ac318b47bd060cb786859f23/flag # Load file from the server
+$ cat flag 
+
+# Done
+```
