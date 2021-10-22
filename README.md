@@ -22,3 +22,12 @@ $ cat flag
 
 # Done
 ```
+
+#### ✅ Task name: "GET aHEAD"
+
+⚙️ Solving
+
+```bash
+$ curl --head http://mercury.picoctf.net:28916
+# Done
+```
