@@ -117,3 +117,27 @@ $ ltdis.sh ./fang-of-haynekhtnamet
 $ cat fang-of-haynekhtnamet.strings.txt | grep 'picoCTF'
 # Done
 ```
+
+#### ✅ Task name: "keygenme-py"
+
+⚙️ Solving
+
+```bash
+$ wget https://mercury.picoctf.net/static/5a4198cd84f87c8a597cbd903d92fbf4/keygenme-trial.py
+```
+
+```Python
+# Let's look at the line 165 and try to guess the license. See code below.
+
+# username_trial=bUsername_trial=b"ANDERSON" (see code at the beginning)
+for j in [4, 5, 3, 6, 2, 7, 1, 8]:
+    print(hashlib.sha256(username_trial).hexdigest()[j], end="")
+print() # 01582419
+
+# Concatenate the next lines
+key_part_static1_trial = "picoCTF{1n_7h3_|<3y_of_"
+key_part_dynamic1_trial = "xxxxxxxx" # 01582419
+key_part_static2_trial = "}"
+
+# Done
+```
