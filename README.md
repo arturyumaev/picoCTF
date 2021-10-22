@@ -103,3 +103,17 @@ $ ./ltdis.sh static
 $ cat static.ltdis.strings.txt | grep 'picoCTF'
 # Done
 ```
+
+#### ✅ Task name: "Tab, Tab, Attack"
+
+⚙️ Solving
+
+```bash
+$ wget https://mercury.picoctf.net/static/a350754a299cb58988d6d47aed5be3ba/Addadshashanammu.zip
+$ unzip Addadshashanammu.zip
+$ cd cd Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/Onnissiralis/Ularradallaku
+# Then find a file named 'ltdis.sh' in my repository and then run the command below
+$ ltdis.sh ./fang-of-haynekhtnamet
+$ cat fang-of-haynekhtnamet.strings.txt | grep 'picoCTF'
+# Done
+```
