@@ -90,3 +90,16 @@ console.log(flag) // 'picoCTF{I_l05t_4ll_my_m0n3y_6045d60dundefined}\x97ÿ'
 // Got picoCTF{I_l05t_4ll_my_m0n3y_6045d60d}
 // Done
 ```
+
+#### ✅ Task name: "Static ain't always noise"
+
+⚙️ Solving
+
+```bash
+$ wget https://mercury.picoctf.net/static/e9dd71b5d11023873b8abe99cdb45551/static
+$ wget wget https://mercury.picoctf.net/static/e9dd71b5d11023873b8abe99cdb45551/ltdis.sh
+$ chmod +x ltdis.sh
+$ ./ltdis.sh static
+$ cat static.ltdis.strings.txt | grep 'picoCTF'
+# Done
+```
