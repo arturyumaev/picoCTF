@@ -141,3 +141,22 @@ key_part_static2_trial = "}"
 
 # Done
 ```
+
+#### ✅ Task name: "Cookies"
+
+⚙️ Solving
+
+```bash
+#!/bin/bash
+
+for i in {0..28}
+do
+	curl --cookie "name=$i" "http://mercury.picoctf.net:64944/check"
+done
+```
+
+```bash
+$ chmod +x script.sh && ./script.sh > out.txt
+$ cat out.txt | grep 'picoCTF'
+# Done 
+```
