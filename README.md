@@ -166,8 +166,6 @@ $ cat out.txt | grep 'picoCTF'
 ⚙️ Solving
 
 ```bash
-#!/bin/bash
-
 # Getting 1/3 part of a flag
 $ curl http://jupiter.challenges.picoctf.org:9670 | grep 'flag'
 # Found
@@ -186,7 +184,7 @@ $ wget http://jupiter.challenges.picoctf.org:9670/myjs.js && cat myjs.js | grep 
 # Found
 ```
 
-#### ✅ Task name: "Insp3ct0r"
+#### ✅ Task name: "Glory of the Garden"
 
 ⚙️ Solving
 
@@ -206,4 +204,3 @@ $ xxd -c 256 garden.jpg > a.txt
 $ cat a.txt | grep 'picoCTF'
 # This works too
 ```
-
