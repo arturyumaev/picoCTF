@@ -185,3 +185,25 @@ $ wget http://jupiter.challenges.picoctf.org:9670/mycss.css && cat mycss.css | g
 $ wget http://jupiter.challenges.picoctf.org:9670/myjs.js && cat myjs.js | grep 'flag'
 # Found
 ```
+
+#### ✅ Task name: "Insp3ct0r"
+
+⚙️ Solving
+
+```bash
+$ wget https://jupiter.challenges.picoctf.org/static/4153422e18d40363e7ffc7e15a108683/garden.jpg
+
+# Open with any hex editor
+# Scroll until the end of the file
+# Done
+```
+
+![image](https://user-images.githubusercontent.com/22350702/138570038-da8d22c2-b209-407d-87ea-8c3b4efeba13.png)
+
+```bash
+# Or
+$ xxd -c 256 garden.jpg > a.txt
+$ cat a.txt | grep 'picoCTF'
+# This works too
+```
+
