@@ -160,3 +160,28 @@ $ chmod +x script.sh && ./script.sh > out.txt
 $ cat out.txt | grep 'picoCTF'
 # Done 
 ```
+
+#### ✅ Task name: "Insp3ct0r"
+
+⚙️ Solving
+
+```bash
+#!/bin/bash
+
+# Getting 1/3 part of a flag
+$ curl http://jupiter.challenges.picoctf.org:9670 | grep 'flag'
+# Found
+
+# We see here that we also load a 'css' file and a 'js' file at the top of the file
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<script type="application/javascript" src="myjs.js"></script>
+# Let's download these artifacts
+
+# Getting 2/3 part of a flag
+$ wget http://jupiter.challenges.picoctf.org:9670/mycss.css && cat mycss.css | grep 'flag'
+# Found
+
+# Getting 3/3 part of a flag
+$ wget http://jupiter.challenges.picoctf.org:9670/myjs.js && cat myjs.js | grep 'flag'
+# Found
+```
