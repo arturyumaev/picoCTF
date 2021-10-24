@@ -204,3 +204,20 @@ $ xxd -c 256 garden.jpg > a.txt
 $ cat a.txt | grep 'picoCTF'
 # This works too
 ```
+
+#### ✅ Task name: "Wireshark doo dooo do doo..."
+
+⚙️ Solving
+
+```bash
+$ wget https://mercury.picoctf.net/static/4c996ecfb7fbada15a9799511f24dc99/shark1.pcapng
+# What we see is that the file has 'pcapng' format, which means it is a dump of sniffed net traffic throught the wireshark.
+# Let's open it using wireshark and see what we have.
+```
+
+![image](https://user-images.githubusercontent.com/22350702/138593567-b0f59bfd-da92-4c40-8f8d-2778bf9de5d3.png)
+
+```bash
+# We see among many requests a request that have 200 OK (text/html) header and a flag
+# The encoding seems like rot13 and it really is.
+```
